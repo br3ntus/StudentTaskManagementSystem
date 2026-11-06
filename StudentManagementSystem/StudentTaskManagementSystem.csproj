@@ -7,4 +7,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="StudentTaskManagementBusinessLogic\**" />
+    <Compile Remove="StudentTaskManagementData\**" />
+    <EmbeddedResource Remove="StudentTaskManagementBusinessLogic\**" />
+    <EmbeddedResource Remove="StudentTaskManagementData\**" />
+    <None Remove="StudentTaskManagementBusinessLogic\**" />
+    <None Remove="StudentTaskManagementData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="StudentTaskManagementBusinessLogic\StudentTaskManagementBusinessLogic.csproj" />
+  </ItemGroup>
+
 </Project>

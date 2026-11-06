@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="StudentManagementSystem.csproj" />
+  <Project Path="StudentTaskManagementBusinessLogic/StudentTaskManagementBusinessLogic.csproj" Id="12c6302c-e896-4a20-a668-860eb682ff37" />
+  <Project Path="StudentTaskManagementData/StudentTaskManagementData.csproj" Id="c087fa28-76bd-4a46-a63c-846c50553fa3" />
+  <Project Path="StudentTaskManagementSystem.csproj" />
 </Solution>
