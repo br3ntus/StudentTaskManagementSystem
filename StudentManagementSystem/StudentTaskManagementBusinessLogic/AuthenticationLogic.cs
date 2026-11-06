@@ -7,20 +7,40 @@ namespace StudentTaskManagementBusinessLogic
 {
     public class AuthenticationLogic
     {
+        private readonly UserDataService _dataService = new UserDataService();
+
         public bool IsLoginValid(string username, string password)
         {
-            UserDataService dataService = new UserDataService();
-            List<User> users = dataService.GetAllUsers();
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrEmpty(password))
+                return false;
 
-            foreach (User user in users)
+            string target = username.Trim();
+
+            foreach (User user in _dataService.GetAllUsers())
             {
-                if (user.Username == username && user.Password == password)
+                if (string.Equals(user.Username, target, StringComparison.OrdinalIgnoreCase)
+                    && user.Password == password)
                 {
                     return true;
                 }
             }
 
             return false;
+        }
+
+        public bool Register(string username, string password)
+        {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrEmpty(password))
+                return false;
+
+            if (_dataService.IsUsernameTaken(username))
+                return false;
+
+            return _dataService.AddUser(new User
+            {
+                Username = username,
+                Password = password
+            });
         }
     }
 }
