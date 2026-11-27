@@ -112,7 +112,7 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Tahoma", 14F);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(10, 286);
+            btnBack.Location = new Point(10, 296);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(725, 50);
             btnBack.TabIndex = 5;

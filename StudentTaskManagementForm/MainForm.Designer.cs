@@ -35,18 +35,18 @@
             lblStatus = new ToolStripStatusLabel();
             lblDb = new ToolStripStatusLabel();
             panelTop = new Panel();
-            lblWelcome = new Label();
             btnLogout = new Button();
+            lblWelcome = new Label();
             pnlFilter = new Panel();
-            rdoPending = new RadioButton();
-            rdoCompleted = new RadioButton();
-            label1 = new Label();
             cboFilterGroup = new ComboBox();
+            label1 = new Label();
+            rdoCompleted = new RadioButton();
+            rdoPending = new RadioButton();
             pnlButtons = new Panel();
-            btnAdd = new Button();
-            btnEdit = new Button();
-            btnDelete = new Button();
             btnDone = new Button();
+            btnDelete = new Button();
+            btnEdit = new Button();
+            btnAdd = new Button();
             dgvTask = new DataGridView();
             statusStrip.SuspendLayout();
             panelTop.SuspendLayout();
@@ -70,7 +70,7 @@
             // 
             lblStatus.ForeColor = Color.FromArgb(244, 237, 224);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(920, 20);
+            lblStatus.Size = new Size(915, 20);
             lblStatus.Spring = true;
             lblStatus.Text = "Ready";
             lblStatus.TextAlign = ContentAlignment.MiddleLeft;
@@ -78,6 +78,7 @@
             // lblDb
             // 
             lblDb.ForeColor = Color.FromArgb(244, 237, 224);
+            lblDb.Margin = new Padding(0, 4, 5, 2);
             lblDb.Name = "lblDb";
             lblDb.Size = new Size(150, 20);
             lblDb.Text = "Database: Connected";
@@ -91,16 +92,6 @@
             panelTop.Name = "panelTop";
             panelTop.Size = new Size(1085, 64);
             panelTop.TabIndex = 1;
-            // 
-            // lblWelcome
-            // 
-            lblWelcome.AutoSize = true;
-            lblWelcome.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWelcome.Location = new Point(16, 18);
-            lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(232, 31);
-            lblWelcome.TabIndex = 0;
-            lblWelcome.Text = "Welcome, Username";
             // 
             // btnLogout
             // 
@@ -117,6 +108,16 @@
             btnLogout.Text = "Log Out";
             btnLogout.UseVisualStyleBackColor = false;
             // 
+            // lblWelcome
+            // 
+            lblWelcome.AutoSize = true;
+            lblWelcome.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcome.Location = new Point(16, 18);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(232, 31);
+            lblWelcome.TabIndex = 0;
+            lblWelcome.Text = "Welcome, Username";
+            // 
             // pnlFilter
             // 
             pnlFilter.Controls.Add(cboFilterGroup);
@@ -129,30 +130,31 @@
             pnlFilter.Size = new Size(1085, 56);
             pnlFilter.TabIndex = 2;
             // 
-            // rdoPending
+            // cboFilterGroup
             // 
-            rdoPending.Appearance = Appearance.Button;
-            rdoPending.BackColor = Color.FromArgb(11, 61, 74);
-            rdoPending.Checked = true;
-            rdoPending.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
-            rdoPending.FlatAppearance.BorderSize = 2;
-            rdoPending.FlatAppearance.CheckedBackColor = Color.FromArgb(200, 240, 60);
-            rdoPending.FlatStyle = FlatStyle.Flat;
-            rdoPending.Font = new Font("Segoe UI", 10.2F);
-            rdoPending.Location = new Point(19, 7);
-            rdoPending.Name = "rdoPending";
-            rdoPending.Size = new Size(114, 38);
-            rdoPending.TabIndex = 0;
-            rdoPending.TabStop = true;
-            rdoPending.Text = "Pending";
-            rdoPending.TextAlign = ContentAlignment.MiddleCenter;
-            rdoPending.UseVisualStyleBackColor = false;
+            cboFilterGroup.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            cboFilterGroup.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFilterGroup.FormattingEnabled = true;
+            cboFilterGroup.Location = new Point(925, 15);
+            cboFilterGroup.Name = "cboFilterGroup";
+            cboFilterGroup.Size = new Size(148, 28);
+            cboFilterGroup.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(816, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 25);
+            label1.TabIndex = 2;
+            label1.Text = "List Group";
             // 
             // rdoCompleted
             // 
             rdoCompleted.Appearance = Appearance.Button;
-            rdoCompleted.BackColor = Color.FromArgb(11, 61, 74);
-            rdoCompleted.Checked = true;
+            rdoCompleted.BackColor = Color.FromArgb(244, 237, 224);
             rdoCompleted.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
             rdoCompleted.FlatAppearance.BorderSize = 2;
             rdoCompleted.FlatAppearance.CheckedBackColor = Color.FromArgb(200, 240, 60);
@@ -163,30 +165,27 @@
             rdoCompleted.Name = "rdoCompleted";
             rdoCompleted.Size = new Size(114, 38);
             rdoCompleted.TabIndex = 1;
-            rdoCompleted.TabStop = true;
             rdoCompleted.Text = "Completed";
             rdoCompleted.TextAlign = ContentAlignment.MiddleCenter;
             rdoCompleted.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // rdoPending
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(792, 16);
-            label1.Name = "label1";
-            label1.Size = new Size(93, 25);
-            label1.TabIndex = 2;
-            label1.Text = "List Group";
-            // 
-            // cboFilterGroup
-            // 
-            cboFilterGroup.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cboFilterGroup.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboFilterGroup.FormattingEnabled = true;
-            cboFilterGroup.Location = new Point(925, 15);
-            cboFilterGroup.Name = "cboFilterGroup";
-            cboFilterGroup.Size = new Size(148, 28);
-            cboFilterGroup.TabIndex = 3;
+            rdoPending.Appearance = Appearance.Button;
+            rdoPending.BackColor = Color.FromArgb(244, 237, 224);
+            rdoPending.Checked = true;
+            rdoPending.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            rdoPending.FlatAppearance.BorderSize = 2;
+            rdoPending.FlatAppearance.CheckedBackColor = Color.FromArgb(200, 240, 60);
+            rdoPending.FlatStyle = FlatStyle.Flat;
+            rdoPending.Font = new Font("Segoe UI", 10.2F);
+            rdoPending.Location = new Point(19, 7);
+            rdoPending.Name = "rdoPending";
+            rdoPending.Size = new Size(114, 38);
+            rdoPending.TabIndex = 0;
+            rdoPending.Text = "Pending";
+            rdoPending.TextAlign = ContentAlignment.MiddleCenter;
+            rdoPending.UseVisualStyleBackColor = false;
             // 
             // pnlButtons
             // 
@@ -201,34 +200,20 @@
             pnlButtons.Size = new Size(190, 423);
             pnlButtons.TabIndex = 3;
             // 
-            // btnAdd
+            // btnDone
             // 
-            btnAdd.BackColor = Color.FromArgb(200, 240, 60);
-            btnAdd.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
-            btnAdd.FlatAppearance.BorderSize = 2;
-            btnAdd.FlatStyle = FlatStyle.Flat;
-            btnAdd.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAdd.Location = new Point(15, 15);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(164, 42);
-            btnAdd.TabIndex = 0;
-            btnAdd.Text = "Add Task";
-            btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // btnEdit
-            // 
-            btnEdit.BackColor = Color.FromArgb(11, 61, 74);
-            btnEdit.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
-            btnEdit.FlatAppearance.BorderSize = 2;
-            btnEdit.FlatStyle = FlatStyle.Flat;
-            btnEdit.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEdit.ForeColor = Color.FromArgb(244, 237, 224);
-            btnEdit.Location = new Point(15, 63);
-            btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(164, 42);
-            btnEdit.TabIndex = 1;
-            btnEdit.Text = "Edit Task";
-            btnEdit.UseVisualStyleBackColor = false;
+            btnDone.BackColor = Color.FromArgb(11, 61, 74);
+            btnDone.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            btnDone.FlatAppearance.BorderSize = 2;
+            btnDone.FlatStyle = FlatStyle.Flat;
+            btnDone.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDone.ForeColor = Color.FromArgb(244, 237, 224);
+            btnDone.Location = new Point(15, 111);
+            btnDone.Name = "btnDone";
+            btnDone.Size = new Size(164, 42);
+            btnDone.TabIndex = 3;
+            btnDone.Text = "Mark as Done";
+            btnDone.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
@@ -245,20 +230,34 @@
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
             // 
-            // btnDone
+            // btnEdit
             // 
-            btnDone.BackColor = Color.FromArgb(11, 61, 74);
-            btnDone.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
-            btnDone.FlatAppearance.BorderSize = 2;
-            btnDone.FlatStyle = FlatStyle.Flat;
-            btnDone.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDone.ForeColor = Color.FromArgb(244, 237, 224);
-            btnDone.Location = new Point(15, 111);
-            btnDone.Name = "btnDone";
-            btnDone.Size = new Size(164, 42);
-            btnDone.TabIndex = 3;
-            btnDone.Text = "Mark as Done";
-            btnDone.UseVisualStyleBackColor = false;
+            btnEdit.BackColor = Color.FromArgb(11, 61, 74);
+            btnEdit.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            btnEdit.FlatAppearance.BorderSize = 2;
+            btnEdit.FlatStyle = FlatStyle.Flat;
+            btnEdit.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEdit.ForeColor = Color.FromArgb(244, 237, 224);
+            btnEdit.Location = new Point(15, 63);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(164, 42);
+            btnEdit.TabIndex = 1;
+            btnEdit.Text = "Edit Task";
+            btnEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.FromArgb(200, 240, 60);
+            btnAdd.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            btnAdd.FlatAppearance.BorderSize = 2;
+            btnAdd.FlatStyle = FlatStyle.Flat;
+            btnAdd.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAdd.Location = new Point(15, 15);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(164, 42);
+            btnAdd.TabIndex = 0;
+            btnAdd.Text = "Add Task";
+            btnAdd.UseVisualStyleBackColor = false;
             // 
             // dgvTask
             // 
@@ -309,7 +308,9 @@
             Controls.Add(statusStrip);
             ForeColor = Color.FromArgb(11, 61, 74);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(800, 500);
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CRAM";
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
