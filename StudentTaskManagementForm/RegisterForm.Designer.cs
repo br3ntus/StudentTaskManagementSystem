@@ -45,11 +45,11 @@
             btnBack.BackColor = Color.FromArgb(11, 61, 74);
             btnBack.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBack.Font = new Font("Tahoma", 14F);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(43, 457);
+            btnBack.Location = new Point(33, 361);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(725, 63);
+            btnBack.Size = new Size(725, 50);
             btnBack.TabIndex = 11;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -61,11 +61,11 @@
             btnLogin.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
             btnLogin.FlatAppearance.BorderSize = 2;
             btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogin.Font = new Font("Tahoma", 14F);
             btnLogin.ForeColor = Color.FromArgb(11, 61, 74);
-            btnLogin.Location = new Point(43, 386);
+            btnLogin.Location = new Point(33, 305);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(725, 63);
+            btnLogin.Size = new Size(725, 50);
             btnLogin.TabIndex = 10;
             btnLogin.Text = "Register";
             btnLogin.UseVisualStyleBackColor = false;
@@ -75,14 +75,14 @@
             // 
             txtPassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             txtPassword.BackColor = Color.White;
-            txtPassword.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPassword.ForeColor = Color.FromArgb(11, 61, 74);
-            txtPassword.Location = new Point(43, 185);
+            txtPassword.Location = new Point(33, 129);
             txtPassword.MaxLength = 30;
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.RightToLeft = RightToLeft.Yes;
-            txtPassword.Size = new Size(725, 51);
+            txtPassword.Size = new Size(725, 38);
             txtPassword.TabIndex = 9;
             txtPassword.TextAlign = HorizontalAlignment.Right;
             // 
@@ -90,33 +90,33 @@
             // 
             txtUsername.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             txtUsername.BackColor = Color.White;
-            txtUsername.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsername.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsername.ForeColor = Color.FromArgb(11, 61, 74);
-            txtUsername.Location = new Point(43, 70);
+            txtUsername.Location = new Point(33, 49);
             txtUsername.MaxLength = 100;
             txtUsername.Name = "txtUsername";
             txtUsername.RightToLeft = RightToLeft.Yes;
-            txtUsername.Size = new Size(725, 51);
+            txtUsername.Size = new Size(725, 38);
             txtUsername.TabIndex = 8;
             txtUsername.TextAlign = HorizontalAlignment.Right;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(33, 129);
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(33, 95);
             label2.Name = "label2";
-            label2.Size = new Size(143, 41);
+            label2.Size = new Size(110, 31);
             label2.TabIndex = 7;
             label2.Text = "Password";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(33, 15);
             label1.Name = "label1";
-            label1.Size = new Size(152, 41);
+            label1.Size = new Size(117, 31);
             label1.TabIndex = 6;
             label1.Text = "Username";
             // 
@@ -124,24 +124,24 @@
             // 
             txtConfirm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             txtConfirm.BackColor = Color.White;
-            txtConfirm.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtConfirm.Font = new Font("Segoe UI", 14F);
             txtConfirm.ForeColor = Color.FromArgb(11, 61, 74);
-            txtConfirm.Location = new Point(43, 301);
+            txtConfirm.Location = new Point(33, 210);
             txtConfirm.MaxLength = 30;
             txtConfirm.Name = "txtConfirm";
             txtConfirm.PasswordChar = '*';
             txtConfirm.RightToLeft = RightToLeft.Yes;
-            txtConfirm.Size = new Size(725, 51);
+            txtConfirm.Size = new Size(725, 39);
             txtConfirm.TabIndex = 13;
             txtConfirm.TextAlign = HorizontalAlignment.Right;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(33, 245);
+            label3.Font = new Font("Segoe UI", 14F);
+            label3.Location = new Point(33, 175);
             label3.Name = "label3";
-            label3.Size = new Size(257, 41);
+            label3.Size = new Size(204, 32);
             label3.TabIndex = 12;
             label3.Text = "Confirm Password";
             label3.Click += label3_Click;
@@ -151,7 +151,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 237, 224);
-            ClientSize = new Size(800, 546);
+            ClientSize = new Size(800, 461);
             Controls.Add(txtConfirm);
             Controls.Add(label3);
             Controls.Add(btnBack);
@@ -166,7 +166,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "RegisterForm";
-            Text = "RegisterForm";
+            Text = "CRAM";
             ResumeLayout(false);
             PerformLayout();
         }
