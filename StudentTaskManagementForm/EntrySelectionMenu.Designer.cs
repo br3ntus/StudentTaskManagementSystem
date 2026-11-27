@@ -28,73 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            registerBtn = new Button();
-            TitleLabel = new Label();
-            logInBtn = new Button();
-            exitBtn = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntrySelectionWindow));
+            btnRegister = new Button();
+            lblTitle = new Label();
+            btnLogIn = new Button();
+            btnExit = new Button();
+            lblsup = new Label();
             SuspendLayout();
             // 
-            // registerBtn
+            // btnRegister
             // 
-            registerBtn.BackColor = SystemColors.ActiveCaption;
-            registerBtn.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            registerBtn.Location = new Point(336, 113);
-            registerBtn.Name = "registerBtn";
-            registerBtn.Size = new Size(203, 59);
-            registerBtn.TabIndex = 0;
-            registerBtn.Text = "REGISTER";
-            registerBtn.UseVisualStyleBackColor = false;
-            registerBtn.Click += registerBtn_Click;
+            btnRegister.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            btnRegister.BackColor = Color.FromArgb(11, 61, 74);
+            btnRegister.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            btnRegister.FlatStyle = FlatStyle.Flat;
+            btnRegister.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRegister.ForeColor = Color.White;
+            btnRegister.Location = new Point(33, 253);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(562, 59);
+            btnRegister.TabIndex = 0;
+            btnRegister.Text = "Register";
+            btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += registerBtn_Click;
             // 
-            // TitleLabel
+            // lblTitle
             // 
-            TitleLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            TitleLabel.AutoSize = true;
-            TitleLabel.BackColor = SystemColors.ActiveCaption;
-            TitleLabel.Font = new Font("Verdana", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TitleLabel.Location = new Point(55, 20);
-            TitleLabel.Name = "TitleLabel";
-            TitleLabel.Size = new Size(765, 53);
-            TitleLabel.TabIndex = 1;
-            TitleLabel.Text = "STUDENT TASK MANAGEMENT";
-            TitleLabel.TextAlign = ContentAlignment.TopCenter;
+            lblTitle.Anchor = AnchorStyles.Top;
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = Color.FromArgb(244, 237, 224);
+            lblTitle.Font = new Font("Verdana", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(11, 61, 74);
+            lblTitle.Location = new Point(198, 28);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(226, 73);
+            lblTitle.TabIndex = 1;
+            lblTitle.Text = "CRAM";
+            lblTitle.TextAlign = ContentAlignment.TopCenter;
             // 
-            // logInBtn
+            // btnLogIn
             // 
-            logInBtn.BackColor = SystemColors.ActiveCaption;
-            logInBtn.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            logInBtn.Location = new Point(336, 178);
-            logInBtn.Name = "logInBtn";
-            logInBtn.Size = new Size(203, 59);
-            logInBtn.TabIndex = 2;
-            logInBtn.Text = "LOG-IN ";
-            logInBtn.UseVisualStyleBackColor = false;
-            logInBtn.Click += logInBtn_Click;
+            btnLogIn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            btnLogIn.BackColor = Color.FromArgb(200, 240, 60);
+            btnLogIn.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            btnLogIn.FlatAppearance.BorderSize = 2;
+            btnLogIn.FlatStyle = FlatStyle.Flat;
+            btnLogIn.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogIn.ForeColor = Color.FromArgb(11, 61, 74);
+            btnLogIn.Location = new Point(33, 169);
+            btnLogIn.Name = "btnLogIn";
+            btnLogIn.Size = new Size(562, 59);
+            btnLogIn.TabIndex = 2;
+            btnLogIn.Text = "Log In";
+            btnLogIn.UseVisualStyleBackColor = false;
+            btnLogIn.Click += logInBtn_Click;
             // 
-            // exitBtn
+            // btnExit
             // 
-            exitBtn.BackColor = SystemColors.ActiveCaption;
-            exitBtn.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            exitBtn.Location = new Point(336, 243);
-            exitBtn.Name = "exitBtn";
-            exitBtn.Size = new Size(203, 59);
-            exitBtn.TabIndex = 3;
-            exitBtn.Text = "EXIT";
-            exitBtn.UseVisualStyleBackColor = false;
-            exitBtn.Click += exitBtn_Click;
+            btnExit.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            btnExit.BackColor = Color.FromArgb(11, 61, 74);
+            btnExit.FlatAppearance.BorderColor = Color.FromArgb(11, 61, 74);
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExit.ForeColor = Color.White;
+            btnExit.Location = new Point(33, 338);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(562, 59);
+            btnExit.TabIndex = 3;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += exitBtn_Click;
+            // 
+            // lblsup
+            // 
+            lblsup.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            lblsup.AutoSize = true;
+            lblsup.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblsup.ForeColor = SystemColors.ControlDarkDark;
+            lblsup.Location = new Point(217, 111);
+            lblsup.Name = "lblsup";
+            lblsup.Size = new Size(186, 25);
+            lblsup.TabIndex = 4;
+            lblsup.Text = "Student Task Manager";
             // 
             // EntrySelectionWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Window;
-            ClientSize = new Size(878, 450);
-            Controls.Add(exitBtn);
-            Controls.Add(logInBtn);
-            Controls.Add(TitleLabel);
-            Controls.Add(registerBtn);
+            BackColor = Color.FromArgb(244, 237, 224);
+            ClientSize = new Size(629, 450);
+            Controls.Add(lblsup);
+            Controls.Add(btnExit);
+            Controls.Add(btnLogIn);
+            Controls.Add(lblTitle);
+            Controls.Add(btnRegister);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EntrySelectionWindow";
-            Text = "Student Task Management";
+            Text = "Cram";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -102,9 +133,10 @@
 
         #endregion
 
-        private Button registerBtn;
-        private Label TitleLabel;
-        private Button logInBtn;
-        private Button exitBtn;
+        private Button btnRegister;
+        private Label lblTitle;
+        private Button btnLogIn;
+        private Button btnExit;
+        private Label lblsup;
     }
 }
